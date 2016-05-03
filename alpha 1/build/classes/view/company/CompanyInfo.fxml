@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.company.CompanyInfoController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="409.0" prefWidth="477.0" spacing="20.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label text="Company Information">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="companyTF" promptText="Company Name" />
+            <TextField fx:id="phoneTF" promptText="Phone Number" />
+            <TextField fx:id="faxTF" promptText="Fax Number" />
+            <TextField fx:id="emailTF" promptText="Email" />
+            <TextField fx:id="webpageTF" promptText="Web Page" />
+            <TextField fx:id="adressTF" promptText="Physical Adress" />
+            <TextArea fx:id="postAdressTA" prefHeight="60.0" prefWidth="457.0" promptText="Postal Adress" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

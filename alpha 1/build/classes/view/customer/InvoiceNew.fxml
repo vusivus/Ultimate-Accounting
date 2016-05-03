@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.customer.InvoiceNewController">
+   <children>
+      <VBox layoutX="31.0" layoutY="29.0" prefHeight="437.0" prefWidth="227.0" spacing="15.0">
+         <children>
+            <Label text="Create Invoice">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="invoiceNumberTF" promptText="Invoice Number" />
+            <TextField fx:id="salesOrderNumberTF" promptText="Sales Order Number" />
+            <DatePicker fx:id="dateDP" onAction="#dateDPAction" prefHeight="25.0" prefWidth="266.0" promptText="Date" />
+            <ComboBox fx:id="cashorCrdeitCB" onAction="#cashorCrdeitCBAction" prefHeight="25.0" prefWidth="228.0" promptText="Cash or Credit?" />
+            <ComboBox fx:id="customerCB" onAction="#customerCBAction" prefHeight="25.0" prefWidth="264.0" promptText="Choose Customer" />
+            <TextArea fx:id="commentsTA" prefHeight="100.0" prefWidth="273.0" promptText="Comments" />
+            <HBox prefHeight="46.0" prefWidth="273.0" spacing="50.0">
+               <children>
+                  <Button fx:id="okayButton" mnemonicParsing="false" onAction="#okayButtonAction" prefHeight="32.0" prefWidth="72.0" text="Okay">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/button/ok_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="32.0" prefWidth="84.0" text="Cancel">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/button/cancel_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="275.0" layoutY="29.0" prefHeight="359.0" prefWidth="526.0" spacing="10.0">
+         <children>
+            <Label text="Items">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="itemsTable" prefHeight="304.0" prefWidth="506.0">
+               <columns>
+                  <TableColumn prefWidth="81.66668701171875" text="Name" />
+                  <TableColumn prefWidth="116.33331298828125" text="Code" />
+                  <TableColumn prefWidth="90.0" text="Unit Price" />
+                  <TableColumn prefWidth="105.33334350585938" text="Tax" />
+                  <TableColumn prefWidth="112.66668701171875" text="Amount" />
+               </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.supplier.SupplierNewController">
+   <children>
+      <Label layoutX="279.0" layoutY="14.0" text="Create New Supplier">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="313.0" layoutY="47.0" prefHeight="339.0" prefWidth="273.0" spacing="15.0">
+         <children>
+            <Label text="Credit Account">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="accountTypeCB" onAction="#accountTypeCBAction" prefHeight="25.0" prefWidth="271.0" promptText="Account Type" />
+            <ComboBox fx:id="accountCategoryCB" onAction="#accountCategoryCBAction" prefHeight="25.0" prefWidth="271.0" promptText="Account Category" />
+            <TextField fx:id="accountNameTF" promptText="Account Name" />
+            <TextField fx:id="accountNumberTF" promptText="Account Number" />
+            <TextField fx:id="balanceTF" promptText="Balance" />
+            <HBox prefHeight="100.0" prefWidth="60.0" spacing="50.0">
+               <children>
+                  <Button fx:id="okayButton" mnemonicParsing="false" onAction="#okayButtonAction" prefHeight="32.0" prefWidth="72.0" text="Okay">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/button/ok_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="32.0" prefWidth="84.0" text="Cancel">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/button/cancel_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="47.0" prefHeight="339.0" prefWidth="284.0" spacing="15.0">
+         <children>
+            <Label text="Supplier Information">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="supplierNameTF" promptText="Full Name" />
+            <TextField fx:id="supplierOrgTF" promptText="Organization" />
+            <TextField fx:id="PhoneNumberTF" promptText="Phone Number" />
+            <TextField fx:id="emailTF" promptText="Email" />
+            <TextField fx:id="addressTF" promptText="Address" />
+            <TextArea fx:id="commentsTF" prefHeight="200.0" prefWidth="200.0" promptText="Comments" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

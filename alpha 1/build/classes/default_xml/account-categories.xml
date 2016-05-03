@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<list>
+    <account-category>
+        <categoryName>Equipment</categoryName>
+        <description>none</description>
+        <accountType>current asset</accountType>
+        <runningBalance>0</runningBalance>
+        <creationDate>
+            <year>2016</year>
+            <month>02</month>
+            <day>22</day>
+            <hour>14</hour>
+            <minute>29</minute>           
+        </creationDate>
+        <accounts><account>
+                <accountName>sampleAccount</accountName>
+                <accountNumber>12345</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+            <account>
+                <accountName>sampleAccount2</accountName>
+                <accountNumber>12356</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+        </accounts>
+    </account-category> 
+    <account-category>
+        <categoryName>Accounts Receivable</categoryName>
+        <description>none</description>
+        <accountType>current asset</accountType>
+        <runningBalance>0</runningBalance>
+        <creationDate>
+            <year>2016</year>
+            <month>02</month>
+            <day>22</day>
+            <hour>14</hour>
+            <minute>29</minute>            
+        </creationDate>
+        <accounts><account>
+                <accountName>demo1</accountName>
+                <accountNumber>123</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+            <account>
+                <accountName>demo2</accountName>
+                <accountNumber>121</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+        </accounts>
+    </account-category> 
+    <account-category>
+        <categoryName>Accounts Payable</categoryName>
+        <description>none</description>
+        <accountType>current liability</accountType>
+        <runningBalance>0</runningBalance>
+        <creationDate>
+            <year>2016</year>
+            <month>02</month>
+            <day>22</day>
+            <hour>14</hour>
+            <minute>29</minute>           
+        </creationDate>
+        <accounts><account>
+                <accountName>demo3</accountName>
+                <accountNumber>120</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+            <account>
+                <accountName>demo4</accountName>
+                <accountNumber>124</accountNumber>
+                <accountBalance>0</accountBalance>
+            </account>
+        </accounts>
+    </account-category>
+</list>

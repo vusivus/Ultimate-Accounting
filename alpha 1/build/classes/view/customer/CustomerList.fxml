@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.CustomerListController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="66.0" prefHeight="307.0" prefWidth="771.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="96.33333587646484" text="Name" />
+          <TableColumn fx:id="creationDateColumn" prefWidth="105.66666412353516" text="Creation Date" />
+            <TableColumn fx:id="activityColumn" prefWidth="111.66665649414062" text="Latest Activity" />
+            <TableColumn fx:id="emailColumn" prefWidth="136.0" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="144.0" text="Phone" />
+            <TableColumn fx:id="debitAccountColumn" prefWidth="183.66668701171875" text="Debit Account" />
+        </columns>
+      </TableView>
+      <Label layoutX="334.0" layoutY="18.0" text="Customer List">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

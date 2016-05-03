@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.company.MainViewController">
+   <children>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox layoutY="27.0" prefHeight="80.0" prefWidth="1024.0" spacing="20.0" style="-fx-background-color: grey;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="create new" />
+               </tooltip>
+            </Button>
+            <Button fx:id="openButton" mnemonicParsing="false" onAction="#openButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/open.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="open" />
+               </tooltip>
+            </Button>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="save" />
+               </tooltip>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="delete" />
+               </tooltip>
+            </Button>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="settings" />
+               </tooltip>
+            </Button>
+            <Button fx:id="editButton" mnemonicParsing="false" onAction="#editButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="edit" />
+               </tooltip>
+            </Button>
+            <Button fx:id="infoButton" mnemonicParsing="false" onAction="#infoButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="information" />
+               </tooltip>
+            </Button>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="search" />
+               </tooltip>
+            </Button>
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#helpButtonAction" prefHeight="64.0" prefWidth="64.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/menubuttons/help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="help" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="7.0" layoutY="109.0" prefHeight="562.0" prefWidth="200.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <TreeView fx:id="treeView" prefHeight="550.0" prefWidth="190.0" />
+         </children>
+      </VBox>
+      <StackPane fx:id="stackPane" layoutX="213.0" layoutY="115.0" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: gray;" />
+   </children>
+</AnchorPane>

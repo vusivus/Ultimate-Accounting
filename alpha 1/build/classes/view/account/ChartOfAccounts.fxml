@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.account.ChartOfAccountsController">
+   <children>
+      <Label layoutX="270.0" layoutY="19.0" text="Chart Of Accounts">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="88.0" prefHeight="369.0" prefWidth="763.0">
+        <columns>
+          <TableColumn fx:id="numberColumn" prefWidth="128.3333282470703" text="Number" />
+          <TableColumn fx:id="nameColumn" prefWidth="286.0" text="Name" />
+            <TableColumn fx:id="typeColumn" prefWidth="154.3333740234375" text="Type" />
+            <TableColumn fx:id="categoryColumn" prefWidth="192.0" text="Category" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

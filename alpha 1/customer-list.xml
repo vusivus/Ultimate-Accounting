@@ -1,0 +1,14 @@
+<Customer>
+  <customerName>sdfsd</customerName>
+  <customerAddress>91</customerAddress>
+  <customerEmail>vt@yahoo.com</customerEmail>
+  <phoneNumber>78576</phoneNumber>
+  <organization>me</organization>
+  <comments>attachee</comments>
+  <debitAccount>
+    <accountName>me</accountName>
+    <accountType>expense</accountType>
+    <accountNumber>123</accountNumber>
+    <accountBalance>0.0</accountBalance>
+  </debitAccount>
+</Customer>

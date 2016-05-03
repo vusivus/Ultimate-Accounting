@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <account>
+    <accountName>Cost Of Goods Sold</accountName>
+    <accountCategory>Accounts Receivable</accountCategory>
+    <accountType>current asset</accountType>
+    <accountNumber>321</accountNumber>
+    <accountBalance>0.0</accountBalance>
+    <creationDate>
+      <hour>6</hour>
+      <minute>49</minute>
+      <day>25</day>
+      <month>1</month>
+      <year>2016</year>
+    </creationDate>
+  </account>
+  <account>
+    <accountName>Sales</accountName>
+    <accountCategory>Accounts Receivable</accountCategory>
+    <accountType>current asset</accountType>
+    <accountNumber>322</accountNumber>
+    <accountBalance>0.0</accountBalance>
+    <creationDate>
+      <hour>6</hour>
+      <minute>53</minute>
+      <day>25</day>
+      <month>1</month>
+      <year>2016</year>
+    </creationDate>
+  </account>
+</list>
